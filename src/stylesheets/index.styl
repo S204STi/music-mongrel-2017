@@ -1,20 +1,29 @@
 @import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:400,200,700')
 
 *
-  margin 0
-  padding 0
-  box-sizing border-box
+    margin 0
+    padding 0
 
 body
-  background url('../assets/TMM_bg_v1.jpeg') no-repeat center center fixed
-  -webkit-background-size cover
-  -moz-background-size cover
-  -o-background-size cover
-  background-size cover
-  font-family 'Source Code Pro', monospace
+    display flex
+    flex-direction column
+
+    background url('../assets/TMM_bg_v1.jpeg') no-repeat center center fixed
+    background-size cover
+    font-family Verdana
+
+    .about
+        flex-direction row
+        justify-content center
+
+        figure
+            padding 1em
+
+        figcaption
+            color #fff
 
 .header
-  background-position center
+    background-position center
 
   .page-title
     font-weight 200
@@ -25,25 +34,25 @@ body
     color #fff
 
 .header-img
-  height 100px
+    height 100px
 
 .nav
-  background #000
-  text-align center
+    background #000
+    text-align center
 
-  li
-    display inline-block
-    color #fff
+    li
+        display inline-block
+        color #fff
 
-  a
-    display inline-block
-    padding 20px
-    color #fff
-    text-decoration none
+    a
+        display inline-block
+        padding 20px
+        color #fff
+        text-decoration none
 
     &:hover
-      background-color #3AB795
-      text-decoration underline
+        background-color #3AB795
+        text-decoration underline
 
 .main-content
   margin 50px auto

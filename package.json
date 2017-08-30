@@ -14,12 +14,13 @@
   "author": "Roy Chase",
   "license": "ISC",
   "dependencies": {
+    "bootstrap": "^3.3.7",
     "express": "^4.15.4",
     "google-auth-library": "^0.10.0",
-    "jade": "^1.11.0",
     "morgan": "^1.8.2",
     "nodemailer": "^4.1.0",
     "nodemon": "^1.11.0",
+    "pug": "^2.0.0-rc.3",
     "stylus": "^0.54.5"
   }
 }

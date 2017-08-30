@@ -4,13 +4,14 @@ html
 		link(rel='stylesheet', href='/css/index.css')
 		title The Music Mongrel
 	body
-		.header
-			h1.page-title The Music Mongrel
-
 		ul.nav
 			li: a(href='/') Home
 			li: a(href='/about') About
+			li: a(href='/shows') Shows
 			li: a(href='/contact') Contact
+
+		.header
+			h1.page-title The Music Mongrel
 
 		.main-content
 			block content

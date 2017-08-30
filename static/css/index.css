@@ -2,20 +2,28 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 body {
+  display: flex;
+  flex-direction: column;
   background: url("../assets/TMM_bg_v1.jpeg") no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
   background-size: cover;
-  font-family: 'Source Code Pro', monospace;
+  font-family: Verdana;
+}
+body .about {
+  flex-direction: row;
+  justify-content: center;
+}
+body .about figure {
+  padding: 1em;
+}
+body .about figcaption {
+  color: #fff;
 }
 .header {
   background-position: center;
 }
-.header .page-title {
+.page-title {
   font-weight: 200;
   font-size: 80px;
   text-align: center;
@@ -40,7 +48,7 @@ body {
   color: #fff;
   text-decoration: none;
 }
-.nav a:hover {
+.nav:hover {
   background-color: #3ab795;
   text-decoration: underline;
 }
