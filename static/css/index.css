@@ -5,10 +5,14 @@
   box-sizing: border-box;
 }
 body {
+  background: url("../assets/TMM_bg_v1.jpeg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   font-family: 'Source Code Pro', monospace;
 }
 .header {
-  background-color: #000;
   background-position: center;
 }
 .header .page-title {
@@ -28,6 +32,7 @@ body {
 }
 .nav li {
   display: inline-block;
+  color: #fff;
 }
 .nav a {
   display: inline-block;
@@ -46,6 +51,7 @@ body {
 .main-content p {
   line-height: 1.6;
   margin-bottom: 1.7em;
+  color: #fff;
 }
 .footer {
   margin: 50px auto;
@@ -54,6 +60,6 @@ body {
   padding: 20px 0;
 }
 .footer p {
-  color: #444;
+  color: #fff;
   font-size: 12px;
 }
