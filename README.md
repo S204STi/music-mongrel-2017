@@ -2,4 +2,4 @@
 
 Basic marketing landing page.
 
-Built using NodeJS, ExpressJS, Jade, and Stylus.
+Built using: NodeJS, ExpressJS for routing, Jade/Pug templating, NodeMailer for SMTP, and Stylus for CSS templating.
