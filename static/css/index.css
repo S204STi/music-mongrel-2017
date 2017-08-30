@@ -4,8 +4,6 @@
   padding: 0;
 }
 body {
-  display: flex;
-  flex-direction: column;
   background: url("../assets/TMM_bg_v1.jpeg") no-repeat center center fixed;
   background-size: cover;
   font-family: Verdana;
@@ -14,9 +12,7 @@ body .about {
   flex-direction: row;
   justify-content: center;
 }
-body .about figure {
-  padding: 1em;
-}
+body .about figure,
 body .about figcaption {
   color: #fff;
 }
@@ -39,11 +35,9 @@ body .about figcaption {
   text-align: center;
 }
 .nav li {
-  display: inline-block;
   color: #fff;
 }
 .nav a {
-  display: inline-block;
   padding: 20px;
   color: #fff;
   text-decoration: none;

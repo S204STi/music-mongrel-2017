@@ -4,17 +4,19 @@ html
 		link(rel='stylesheet', href='/css/index.css')
 		title The Music Mongrel
 	body
-		ul.nav
-			li: a(href='/') Home
-			li: a(href='/about') About
-			li: a(href='/shows') Shows
-			li: a(href='/contact') Contact
+		.container
 
-		.header
-			h1.page-title The Music Mongrel
+			ul.nav
+				li: a(href='/') Home
+				li: a(href='/about') About
+				li: a(href='/shows') Shows
+				li: a(href='/contact') Contact
 
-		.main-content
-			block content
+			.header.row
+				h1.page-title The Music Mongrel
 
-		.footer
-			p Copyright (c) 2017 Music Mongrel - All Rights Reserved.
+			.main-content.row
+				block content
+
+			.footer.row
+				p Copyright (c) 2017 Music Mongrel - All Rights Reserved.
