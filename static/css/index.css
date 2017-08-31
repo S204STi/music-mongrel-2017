@@ -1,28 +1,26 @@
-@import url("https://fonts.googleapis.com/css?family=Source+Code+Pro:400,200,700");
 * {
   margin: 0;
   padding: 0;
 }
 body {
   display: flex;
-  flex-direction: column;
+  flex-flow: column wrap;
+  justify-content: center;
   background: url("../assets/TMM_bg_v1.jpeg") no-repeat center center fixed;
   background-size: cover;
   font-family: Verdana;
-}
-.header {
-  background-position: center;
+  font-size: 1em;
+  color: #fff;
 }
 .page-title {
+  padding: 1em 0;
   font-weight: 100;
-  font-size: 80px;
+  font-size: 4em;
   text-align: center;
-  padding: 100px;
   text-transform: uppercase;
   color: #fff;
 }
 .nav {
-  display: flex;
   flex-flow: row wrap;
   justify-content: center;
   background: #000;
@@ -34,7 +32,7 @@ body {
 }
 .nav a {
   display: inline-block;
-  padding: 20px;
+  padding: 1em;
   color: #fff;
   text-decoration: none;
 }
@@ -43,10 +41,7 @@ body {
   text-decoration: underline;
 }
 .main-content {
-  display: flex;
-  margin: 50px auto;
-  max-width: 600px;
-  text-align: justify;
+  text-align: center;
 }
 .main-content p {
   line-height: 1.6;
@@ -54,28 +49,61 @@ body {
   color: #fff;
 }
 .main-content .blurb {
+  text-align: justify;
   margin-top: 0.5em;
 }
-.main-content .about {
-  flex-direction: row;
-  justify-content: center;
+.about {
+  flex-flow: row wrap;
+  justify-content: space-around;
 }
-.main-content .about figure {
+.about figure {
+  display: inline-block;
   padding: 1em;
 }
-.main-content .about figcaption {
+.about figcaption {
   color: #fff;
 }
-.showsList,
+.contact {
+  width: 40%;
+  margin-left: 30%;
+  justify-content: flex-start;
+  text-align: justify;
+}
+.contact .form-control {
+  padding: 1em 0;
+}
+.contact label {
+  color: #fff;
+}
+.contact input {
+  width: 100%;
+  height: 2em;
+}
+.contact textarea {
+  width: 100%;
+}
+.contact button {
+  border-radius: 5px;
+  border: 2px solid #008000;
+  background-color: #008000;
+  color: #fff;
+  height: 3em;
+  width: 100%;
+  font-size: 1em;
+}
+@media only screen and (max-width: 320px) {
+  .contact {
+    width: 80%;
+    margin-left: 10%;
+  }
+}
 .footer {
   bottom: 0;
-  margin: 50px auto;
-  max-width: 600px;
   border-top: 1px solid #444;
-  padding: 20px 0;
+  padding: 2em 0;
 }
-.showsList p,
 .footer p {
+  text-align: center;
   color: #fff;
-  font-size: 12px;
+  font-size: 0.5em;
 }

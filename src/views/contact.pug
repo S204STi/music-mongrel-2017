@@ -3,7 +3,28 @@ extend default
 block content
 
 	h3.
-		Contact Us / Request Booking
+		Contact Us / Request A Booking
 
-	form
-		
+	br
+
+	form.contact(method='POST' action='/contact')
+		div.form-control
+			label(for = 'name') Your Name:
+			br
+			input#name(type='text', placeholder='first and last name', name='name')
+		div.form-control
+			label(for = 'bandName') Your Band Name:
+			br
+			input#bandName(type='text', placeholder='band name (optional)', name='bandName')
+		div.form-control
+			label(for='email') Your Email:
+			br
+			input#email(type='email', placeholder='name@email.com' name='email')
+		div.form-control
+			label(for = 'message') Your Message for TMM:
+			br
+			textarea#message(rows=4, name='message')
+
+		br
+
+		button(type='submit') Send It!
