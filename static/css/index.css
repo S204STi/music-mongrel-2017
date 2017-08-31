@@ -41,7 +41,10 @@ body {
   text-decoration: underline;
 }
 .main-content {
+  width: 40%;
+  margin-left: 30%;
   text-align: center;
+  text-align: justify;
 }
 .main-content p {
   line-height: 1.6;
@@ -62,12 +65,6 @@ body {
 }
 .about figcaption {
   color: #fff;
-}
-.contact {
-  width: 40%;
-  margin-left: 30%;
-  justify-content: flex-start;
-  text-align: justify;
 }
 .contact .form-control {
   padding: 1em 0;
@@ -91,12 +88,6 @@ body {
   width: 100%;
   font-size: 1em;
 }
-@media only screen and (max-width: 320px) {
-  .contact {
-    width: 80%;
-    margin-left: 10%;
-  }
-}
 .footer {
   bottom: 0;
   border-top: 1px solid #444;
@@ -106,4 +97,10 @@ body {
   text-align: center;
   color: #fff;
   font-size: 0.5em;
+}
+@media (max-width: 600px) {
+  .main-content {
+    width: 80%;
+    margin-left: 10%;
+  }
 }
