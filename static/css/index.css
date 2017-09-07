@@ -6,16 +6,14 @@ body {
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
-  background: url("../assets/TMM_bg_v1.jpeg") no-repeat center center fixed;
+  background: url("../assets/TMM_bg_v1_1440p_compressed.jpg") no-repeat center center fixed;
   background-size: cover;
   font-family: Verdana;
-  font-size: 1em;
   color: #fff;
 }
-.page-title {
-  padding: 1em 0;
+body .page-title {
+  padding: 2% 0;
   font-weight: 100;
-  font-size: 4em;
   text-align: center;
   text-transform: uppercase;
   color: #fff;
@@ -32,7 +30,6 @@ body {
 }
 .nav a {
   display: inline-block;
-  padding: 1em;
   color: #fff;
   text-decoration: none;
 }
@@ -41,19 +38,16 @@ body {
   text-decoration: underline;
 }
 .main-content {
-  width: 40%;
-  margin-left: 30%;
   text-align: center;
   text-align: justify;
+  height: 80%;
 }
 .main-content p {
   line-height: 1.6;
-  margin-bottom: 1.7em;
   color: #fff;
 }
 .main-content .blurb {
   text-align: justify;
-  margin-top: 0.5em;
 }
 .about {
   flex-flow: row wrap;
@@ -61,20 +55,15 @@ body {
 }
 .about figure {
   display: inline-block;
-  padding: 1em;
 }
 .about figcaption {
   color: #fff;
-}
-.contact .form-control {
-  padding: 1em 0;
 }
 .contact label {
   color: #fff;
 }
 .contact input {
   width: 100%;
-  height: 2em;
 }
 .contact textarea {
   width: 100%;
@@ -84,23 +73,19 @@ body {
   border: 2px solid #008000;
   background-color: #008000;
   color: #fff;
-  height: 3em;
   width: 100%;
-  font-size: 1em;
+}
+.logo {
+  max-width: 200px;
+  height: auto;
 }
 .footer {
-  bottom: 0;
+  position: fixed;
+  bottom: 2%;
   border-top: 1px solid #444;
-  padding: 2em 0;
 }
 .footer p {
+  padding: 2% 0;
   text-align: center;
   color: #fff;
-  font-size: 0.5em;
-}
-@media (max-width: 600px) {
-  .main-content {
-    width: 80%;
-    margin-left: 10%;
-  }
 }
