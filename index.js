@@ -1,9 +1,12 @@
 'use strict';
 
-var express  = require( 'express' ),
-    logger   = require( 'morgan' ),
-    app      = express(),
-    template = require( 'pug' );
+require('dotenv').config();
+
+const express  = require( 'express' ),
+      logger   = require( 'morgan' ),
+      app      = express(),
+      template = require( 'pug' ),
+      mailer   = require('nodemailer');
 
 app.use( logger( 'dev' ) );
 app.use( express.static( __dirname + '/static') );

@@ -52,8 +52,14 @@ body .page-title {
 .main-content .blurb {
   text-align: justify;
 }
-.about figcaption {
+.about figure {
   text-align: center;
+}
+.about img {
+  height: 205px;
+}
+.about figcaption {
+  text-align: left;
   color: #fff;
 }
 .contact label {
