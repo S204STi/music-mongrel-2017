@@ -32,6 +32,21 @@ app.get('/contact', function (req, res) {
     res.send(html);
 });
 
+app.get('/thanks', function (req, res) {
+    var fn = template.compileFile( __dirname + '/src/views/thanks.pug');
+    var html = fn({title:'Thanks'});
+    res.send(html);
+});
+
+app.post('/contact', function(req, res, next) {
+    var mail = true;
+    if( mail ) {
+        res.redirect('/thanks');
+    } else {
+        res.redirect('/error');
+    }
+});
+
 app.listen( process.env.PORT || 3000, function () {
     console.log('Listening on http://localhost' + ( process.env.PORT || 3000 ));
 });
