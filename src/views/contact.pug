@@ -8,23 +8,15 @@ block content
 	br
 
 	form.contact(method='POST' action='/contact')
-		div.form-control
-			label(for = 'name') Your Name:
-			br
-			input#name(type='text', placeholder='first and last name', name='name')
-		div.form-control
-			label(for = 'bandName') Your Band Name:
-			br
-			input#bandName(type='text', placeholder='band name (optional)', name='bandName')
-		div.form-control
-			label(for='email') Your Email:
-			br
-			input#email(type='email', placeholder='name@email.com' name='email')
-		div.form-control
-			label(for = 'message') Your Message for TMM:
-			br
-			textarea#message(rows=4, name='message')
+		div.form-group
+			input.form-control#name(type='text', placeholder='First and Last Name', name='name')
+		div.form-group
+			input.form-control#bandName(type='text', placeholder='Band Name (if applicable)', name='bandName')
+		div.form-group
+			input.form-control#email(type='email', placeholder='your_email@domain.com' name='email' )
+		div.form-group
+			textarea.form-control#message(rows=4, name='message', placeholder='What would you like to ask us?')
 
 		br
 
-		button(type='submit') Send It!
+		button.btn.btn-lg.btn-primary(type='submit') Send It!

@@ -40,7 +40,10 @@ body .page-title {
 .main-content {
   text-align: center;
   text-align: justify;
-  height: 80%;
+  padding-bottom: 3%;
+}
+.main-content h3 {
+  text-align: center;
 }
 .main-content p {
   line-height: 1.6;
@@ -49,30 +52,14 @@ body .page-title {
 .main-content .blurb {
   text-align: justify;
 }
-.about {
-  flex-flow: row wrap;
-  justify-content: space-around;
-}
-.about figure {
-  display: inline-block;
-}
 .about figcaption {
+  text-align: center;
   color: #fff;
 }
 .contact label {
   color: #fff;
 }
-.contact input {
-  width: 100%;
-}
-.contact textarea {
-  width: 100%;
-}
 .contact button {
-  border-radius: 5px;
-  border: 2px solid #008000;
-  background-color: #008000;
-  color: #fff;
   width: 100%;
 }
 .logo {
@@ -80,11 +67,12 @@ body .page-title {
   height: auto;
 }
 .footer {
-  position: fixed;
-  bottom: 2%;
+  position: absolute;
+  bottom: 0;
+  height: 2%;
   border-top: 1px solid #444;
 }
-.footer p {
+.footer small {
   padding: 2% 0;
   text-align: center;
   color: #fff;
