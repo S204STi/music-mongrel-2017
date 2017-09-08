@@ -7,17 +7,28 @@ html
 		link(rel='stylesheet', href='/css/index.css')
 		title The Music Mongrel
 	body
-		ul.nav
-			li.flex-item: a(href='/') Home
-			li.flex-item: a(href='/about') About
-			li.flex-item: a(href='/shows') Shows
-			li.flex-item: a(href='/contact') Contact
+		nav.navbar.navbar-inverse.navbar-static-top( role='navigation' )
+			.container
+				.navbar-header
+					button.navbar-toggle.collapsed( type='button', data-toggle='collapse', data-target='#headerNav', aria-expanded='false', aria-controls-'navbar')
+						span.sr-only Toggle Nav
+						span.icon-bar
+						span.icon-bar
+						span.icon-bar
+				.collapse.navbar-collapse( id='headerNav')
+					ul.nav.navbar-nav
+						li: a(href='/') Home
+						li: a(href='/about') About
+						li: a(href='/shows') Shows
+						li: a(href='/contact') Contact
 		.container
 			.header.col-xs-12
 				h1.page-title The Music Mongrel
 
 			.main-content.col-xs-12.col-md-6.col-md-offset-3
 				block content
-		footer.footer.col-xs-12
+		footer.footer.hidden-xs.col-sm-12
 			.container
-				small.col-xs-hidden.col-md-6.col-md-offset-3.text-muted Copyright (c) 2017 Music Mongrel - All Rights Reserved.
+				small.col-md-6.col-md-offset-3.text-muted Copyright (c) 2017 Music Mongrel - All Rights Reserved.
+	script(src='https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js')
+	script(src='/bootstrap/dist/js/bootstrap.min.js')
